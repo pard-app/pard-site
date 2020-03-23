@@ -9,38 +9,144 @@ function changeLng(lng) {
 }
 
 i18next.on('languageChanged', () => {
-  updateContent(["intro_title", "intro_text"]);
+  updateContent(["intro_title",
+    "intro_text",
+    "learn_more",
+    "early_access",
+    "features_title",
+    "feature_1_title",
+    "feature_1_text",
+    "feature_2_title",
+    "feature_2_text",
+    "feature_3_title",
+    "feature_3_text",
+    "feature_4_title",
+    "feature_4_text",
+    "feature_5_title",
+    "feature_5_text",
+    "feature_6_title",
+    "feature_6_text",
+    "meet",
+    "meet_text",
+    "cta_title",
+    "cta_text",
+    "sign_up",
+    "footer_copyright"
+  ]);
 });
 
 i18next.init({
     lng: "en",
-    debug: true,
     resources: {
       en: {
         translation: {
           "intro_title": "Marketplace for the 21st century",
-          "intro_text": "We are the newest, friendliest and easiest local market app, currently being developed. Sign up to receive early access.",
+          "intro_text": "We are the newest, friendliest and easiest to use local market app, currently in development. Sign up to receive early access.",
           "learn_more": "Learn more",
           "early_access": "Early access",
           "features_title": "Exciting features",
           "feature_1_title": "Starter kit for going online",
           "feature_1_text": "Takes 1 minute to sign up..",
+          "feature_2_title": "Handling of paperwork",
+          "feature_2_text": "We handle all the paperwork so you don't have to, including privacy policy and terms of use.",
+          "feature_3_title": "Add listings and manage stock",
+          "feature_3_text": "Easily add listings in the app with your phone's camera",
+          "feature_4_title": "Attract new customers",
+          "feature_4_text": "Visitors can browse all the listings .. ",
+          "feature_5_title": "In-app payments",
+          "feature_5_text": "We handle the payment processors so visitors can purchase directly in app ...",
+          "feature_6_title": "Help for local businesses",
+          "feature_6_text": "Buy from vendors nearest to you ...",
           "meet": "Meet",
-          "meet_text": "test",
-
+          "meet_text": "Learn more about our app in the video .... ",
+          "cta_title": "Sign up for early access",
+          "cta_text": "Enter your e-mail to sign up for our mailing list and receive access to the app.",
+          "sign_up": "Sign up",
+          "footer_copyright": "&copy; 2020 pard"
         }
       },
       lv: {
         translation: {
-          "intro_title": "Test",
-          "intro_text": "Test 2"
+          "intro_title": "Marketplace for the 21st century",
+          "intro_text": "We are the newest, friendliest and easiest to use local market app, currently in development. Sign up to receive early access.",
+          "learn_more": "Learn more",
+          "early_access": "Early access",
+          "features_title": "Exciting features",
+          "feature_1_title": "Starter kit for going online",
+          "feature_1_text": "Takes 1 minute to sign up..",
+          "feature_2_title": "Handling of paperwork",
+          "feature_2_text": "We handle all the paperwork so you don't have to, including privacy policy and terms of use.",
+          "feature_3_title": "Add listings and manage stock",
+          "feature_3_text": "Easily add listings in the app with your phone's camera",
+          "feature_4_title": "Attract new customers",
+          "feature_4_text": "Visitors can browse all the listings .. ",
+          "feature_5_title": "In-app payments",
+          "feature_5_text": "We handle the payment processors so visitors can purchase directly in app ...",
+          "feature_6_title": "Help for local businesses",
+          "feature_6_text": "Buy from vendors nearest to you ...",
+          "meet": "Meet",
+          "meet_text": "Learn more about our app in the video .... ",
+          "cta_title": "Sign up for early access",
+          "cta_text": "Enter your e-mail to sign up for our mailing list and receive access to the app.",
+          "sign_up": "Sign up",
+          "footer_copyright": "&copy; 2020 pard"
+        }
+      },
+      lt: {
+        translation: {
+          "intro_title": "Marketplace for the 21st century",
+          "intro_text": "We are the newest, friendliest and easiest to use local market app, currently in development. Sign up to receive early access.",
+          "learn_more": "Learn more",
+          "early_access": "Early access",
+          "features_title": "Exciting features",
+          "feature_1_title": "Starter kit for going online",
+          "feature_1_text": "Takes 1 minute to sign up..",
+          "feature_2_title": "Handling of paperwork",
+          "feature_2_text": "We handle all the paperwork so you don't have to, including privacy policy and terms of use.",
+          "feature_3_title": "Add listings and manage stock",
+          "feature_3_text": "Easily add listings in the app with your phone's camera",
+          "feature_4_title": "Attract new customers",
+          "feature_4_text": "Visitors can browse all the listings .. ",
+          "feature_5_title": "In-app payments",
+          "feature_5_text": "We handle the payment processors so visitors can purchase directly in app ...",
+          "feature_6_title": "Help for local businesses",
+          "feature_6_text": "Buy from vendors nearest to you ...",
+          "meet": "Meet",
+          "meet_text": "Learn more about our app in the video .... ",
+          "cta_title": "Sign up for early access",
+          "cta_text": "Enter your e-mail to sign up for our mailing list and receive access to the app.",
+          "sign_up": "Sign up",
+          "footer_copyright": "&copy; 2020 pard"
         }
       }
     }
   },
   function (err, t) {
     // initialized and ready to go!
-    updateContent(["intro_title", "intro_text"]);
+    updateContent(["intro_title",
+      "intro_text",
+      "learn_more",
+      "early_access",
+      "features_title",
+      "feature_1_title",
+      "feature_1_text",
+      "feature_2_title",
+      "feature_2_text",
+      "feature_3_title",
+      "feature_3_text",
+      "feature_4_title",
+      "feature_4_text",
+      "feature_5_title",
+      "feature_5_text",
+      "feature_6_title",
+      "feature_6_text",
+      "meet",
+      "meet_text",
+      "cta_title",
+      "cta_text",
+      "sign_up",
+      "footer_copyright"
+    ]);
   }
 );
 

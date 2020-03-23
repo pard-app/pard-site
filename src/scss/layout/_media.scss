@@ -11,9 +11,18 @@
 
 .media-canvas {
 	position: relative;
+	justify-content: center;
+	display: flex;
+
+	iframe {
+		z-index: 1;
+		position: relative;
+		margin: 0 auto;
+	}
 
 	svg {
-		position: relative; /* To display the canvas above the illustration */
+		position: relative;
+		/* To display the canvas above the illustration */
 		width: 100%;
 		height: auto;
 	}
@@ -44,7 +53,7 @@
 	}
 }
 
-@include media( '>medium' ) {
+@include media('>medium') {
 
 	.media {
 
@@ -54,7 +63,7 @@
 
 		.section-paragraph {
 			padding-left: 72px;
-	    	padding-right: 72px;
+			padding-right: 72px;
 			margin-bottom: 80px;
 		}
 	}
