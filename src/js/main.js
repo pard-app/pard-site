@@ -62,9 +62,9 @@ i18next.use(window.i18nextBrowserLanguageDetector).init(
           feature_5_title: "Payment integration",
           feature_5_text:
             "Visitors can purchase the items with highly secure in-app payments.",
-          feature_6_title: "Pickup & delivery",
+          feature_6_title: "Door-to-door delivery",
           feature_6_text:
-            "We will pick up and deliver the item from your store to the customer.",
+            "We will pick up and deliver the item from your store to the customer while taking all the necessary precautions related to the COVID-19 epidemic.",
           meet: "Meet",
           meet_text:
             "We started as an entry in Lithuania's #HackTheCrisis hackathon and are continuing from there. Watch out short pitch to learn more.",
@@ -100,7 +100,7 @@ i18next.use(window.i18nextBrowserLanguageDetector).init(
             "Apmeklētāji varēs iegādāties preces uzreiz no aplikācijas ar drošiem maksājumiem.",
           feature_6_title: "Preču piegāde no durvīm līdz durvīm",
           feature_6_text:
-            "Mēs nodrošināsim preču savākšanu no veikala un piegādi līdz klientam.",
+            "Mēs nodrošināsim preču savākšanu no veikala un piegādi līdz klientam, ievērojot visas sanitārās prasības, kas saistītas ar COVID-19 epidēmiju.",
           meet: "Iepazīsties ar",
           meet_text:
             "Mēs sākām darbu kā dalībnieki Lietuvas #HackTheCrisis hakatonā un aktīvi turpinām to. Apskati mūsu video pieteikumu, lai uzzinātu vairāk.",
