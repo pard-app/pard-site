@@ -1,6 +1,6 @@
 function updateContent(translations) {
   translations.forEach(translation => {
-    document.getElementById(translation).innerHTML = i18next.t(translation)
+    document.getElementById(translation).innerHTML = i18next.t(translation);
   });
 }
 
@@ -8,8 +8,9 @@ function changeLng(lng) {
   i18next.changeLanguage(lng);
 }
 
-i18next.on('languageChanged', () => {
-  updateContent(["intro_title",
+i18next.on("languageChanged", () => {
+  updateContent([
+    "intro_title",
     "intro_text",
     "learn_more",
     "early_access",
@@ -35,95 +36,123 @@ i18next.on('languageChanged', () => {
   ]);
 });
 
-i18next.init({
-    lng: "en",
+i18next.use(window.i18nextBrowserLanguageDetector).init(
+  {
     resources: {
       en: {
         translation: {
-          "intro_title": "Marketplace for the 21st century",
-          "intro_text": "We are the newest, friendliest and easiest to use local market app currently being developed. Sign up to receive early access.",
-          "learn_more": "Learn more",
-          "early_access": "Early access",
-          "features_title": "Exciting features",
-          "feature_1_title": "Starter kit for going online",
-          "feature_1_text": "It takes one minute to register for our app and start selling products. It's that easy.",
-          "feature_2_title": "No paperwork",
-          "feature_2_text": "We handle all the legal stuff so you don't have to, including privacy policy and terms of use.",
-          "feature_3_title": "Add listings and manage stock",
-          "feature_3_text": "Easily add listings in the app with your phone's camera — take a picture, add details and post.",
-          "feature_4_title": "Attract new customers",
-          "feature_4_text": "Visitors can browse through all the listings and make orders directly in the marketplace.",
-          "feature_5_title": "Payment integration",
-          "feature_5_text": "Visitors can purchase the items with highly secure in-app payments.",
-          "feature_6_title": "Pickup & delivery",
-          "feature_6_text": "We will pick up and deliver the item from your store to the customer.",
-          "meet": "Meet",
-          "meet_text": "We started as an entry in Lithuania's #HackTheCrisis hackathon and are continuing from there. Watch out short pitch to learn more.",
-          "cta_title": "Sign up for early access",
-          "cta_text": "The app is currently in active development and is available for early adopters. Sign up for our mailing list and be the first to try it.",
-          "sign_up": "Sign up",
-          "footer_copyright": "&copy; 2020 pard"
+          intro_title: "Marketplace for the 21st century",
+          intro_text:
+            "We are the newest, friendliest and easiest to use local market app currently being developed. Sign up to receive early access.",
+          learn_more: "Learn more",
+          early_access: "Early access",
+          features_title: "Exciting features",
+          feature_1_title: "Starter kit for going online",
+          feature_1_text:
+            "It takes one minute to register for our app and start selling products. It's that easy.",
+          feature_2_title: "No paperwork",
+          feature_2_text:
+            "We handle all the legal stuff so you don't have to, including privacy policy and terms of use.",
+          feature_3_title: "Add listings and manage stock",
+          feature_3_text:
+            "Easily add listings in the app with your phone's camera — take a picture, add details and post.",
+          feature_4_title: "Attract new customers",
+          feature_4_text:
+            "Visitors can browse through all the listings and make orders directly in the marketplace.",
+          feature_5_title: "Payment integration",
+          feature_5_text:
+            "Visitors can purchase the items with highly secure in-app payments.",
+          feature_6_title: "Pickup & delivery",
+          feature_6_text:
+            "We will pick up and deliver the item from your store to the customer.",
+          meet: "Meet",
+          meet_text:
+            "We started as an entry in Lithuania's #HackTheCrisis hackathon and are continuing from there. Watch out short pitch to learn more.",
+          cta_title: "Sign up for early access",
+          cta_text:
+            "The app is currently in active development and is available for early adopters. Sign up for our mailing list and be the first to try it.",
+          sign_up: "Sign up",
+          footer_copyright: "&copy; 2020 pard"
         }
       },
       lv: {
         translation: {
-          "intro_title": "Mūsdienīgs tirgus placis, aplikācijā",
-          "intro_text": "Mēs esam jaunākā, draudzīgākā un visvieglāk lietojamā vietējā tirgus aplikācija, kas pašlaik tiek izstrādāta. Aplikācija pieejama agrīnajā piekļuvē.",
-          "learn_more": "Uzzināt vairāk",
-          "early_access": "Agrīnā piekļuve",
-          "features_title": "Aizraujošas iespējas",
-          "feature_1_title": "Sākuma komplekts tiešsaistes biznesa uzsākšanai",
-          "feature_1_text": "Reģistrējies aplikācijā minūtes laikā un sāc pārdot uzreiz. Tas ir tieši tik vienkārši.",
-          "feature_2_title": "Bez papīru kalniem",
-          "feature_2_text": "Mēs parūpēsimies par visu juridisko pusi, ieskaitot lietošanas noteikumus un privātuma politiku.",
-          "feature_3_title": "Vienkārša sludinājumu pārvaldība",
-          "feature_3_text": "Pievieno sludinājumus uzreiz no aplikācijas ar telefona kameru — nobildē preci, pievieno detaļas un sludinājums ir gatavs publicēšanai.",
-          "feature_4_title": "Piesaisti jaunus klientus",
-          "feature_4_text": "Apmeklētāji redzēs visus sludinājumus un varēs veikt pasūtījumus uzreiz no mājaslapas.",
-          "feature_5_title": "Maksājumu integrācija",
-          "feature_5_text": "Apmeklētāji varēs iegādāties preces uzreiz no aplikācijas ar drošiem maksājumiem.",
-          "feature_6_title": "Preču piegāde no durvīm līdz durvīm",
-          "feature_6_text": "Mēs nodrošināsim preču savākšanu no veikala un piegādi līdz klientam.",
-          "meet": "Iepazīsties ar",
-          "meet_text": "Mēs sākām darbu kā dalībnieki Lietuvas #HackTheCrisis hakatonā un aktīvi turpinām to. Apskati mūsu video pieteikumu, lai uzzinātu vairāk.",
-          "cta_title": "Piesakies agrīnai piekļuvei",
-          "cta_text": "Aplikācija pašlaik tiek aktīvi izstrādāta un ir pieejama testa režīmā. Atstāj savu e-pastu un esi viens no pirmajiem, kas to izmēģina.",
-          "sign_up": "Reģistrēties",
-          "footer_copyright": "&copy; 2020 pard"
+          intro_title: "Mūsdienīgs tirgus placis, aplikācijā",
+          intro_text:
+            "Mēs esam jaunākā, draudzīgākā un visvieglāk lietojamā vietējā tirgus aplikācija, kas pašlaik tiek izstrādāta. Aplikācija pieejama agrīnajā piekļuvē.",
+          learn_more: "Uzzināt vairāk",
+          early_access: "Agrīnā piekļuve",
+          features_title: "Aizraujošas iespējas",
+          feature_1_title: "Sākuma komplekts tiešsaistes biznesa uzsākšanai",
+          feature_1_text:
+            "Reģistrējies aplikācijā minūtes laikā un sāc pārdot uzreiz. Tas ir tieši tik vienkārši.",
+          feature_2_title: "Bez papīru kalniem",
+          feature_2_text:
+            "Mēs parūpēsimies par visu juridisko pusi, ieskaitot lietošanas noteikumus un privātuma politiku.",
+          feature_3_title: "Vienkārša sludinājumu pārvaldība",
+          feature_3_text:
+            "Pievieno sludinājumus uzreiz no aplikācijas ar telefona kameru — nobildē preci, pievieno detaļas un sludinājums ir gatavs publicēšanai.",
+          feature_4_title: "Piesaisti jaunus klientus",
+          feature_4_text:
+            "Apmeklētāji redzēs visus sludinājumus un varēs veikt pasūtījumus uzreiz no mājaslapas.",
+          feature_5_title: "Maksājumu integrācija",
+          feature_5_text:
+            "Apmeklētāji varēs iegādāties preces uzreiz no aplikācijas ar drošiem maksājumiem.",
+          feature_6_title: "Preču piegāde no durvīm līdz durvīm",
+          feature_6_text:
+            "Mēs nodrošināsim preču savākšanu no veikala un piegādi līdz klientam.",
+          meet: "Iepazīsties ar",
+          meet_text:
+            "Mēs sākām darbu kā dalībnieki Lietuvas #HackTheCrisis hakatonā un aktīvi turpinām to. Apskati mūsu video pieteikumu, lai uzzinātu vairāk.",
+          cta_title: "Piesakies agrīnai piekļuvei",
+          cta_text:
+            "Aplikācija pašlaik tiek aktīvi izstrādāta un ir pieejama testa režīmā. Atstāj savu e-pastu un esi viens no pirmajiem, kas to izmēģina.",
+          sign_up: "Reģistrēties",
+          footer_copyright: "&copy; 2020 pard"
         }
       },
       lt: {
         translation: {
-          "intro_title": "Marketplace for the 21st century",
-          "intro_text": "We are the newest, friendliest and easiest to use local market app currently being developed. Sign up to receive early access.",
-          "learn_more": "Learn more",
-          "early_access": "Early access",
-          "features_title": "Exciting features",
-          "feature_1_title": "Starter kit for going online",
-          "feature_1_text": "It takes one minute to register for our app and start selling products. It's that easy.",
-          "feature_2_title": "No paperwork",
-          "feature_2_text": "We handle all the legal stuff so you don't have to, including privacy policy and terms of use.",
-          "feature_3_title": "Add listings and manage stock",
-          "feature_3_text": "Easily add listings in the app with your phone's camera — take a picture, add details and post.",
-          "feature_4_title": "Attract new customers",
-          "feature_4_text": "Visitors can browse through all the listings and make orders directly in the marketplace.",
-          "feature_5_title": "Payment integration",
-          "feature_5_text": "Visitors can purchase the items with highly secure in-app payments.",
-          "feature_6_title": "Pickup & delivery",
-          "feature_6_text": "We will pick up and deliver the item from your store to the customer.",
-          "meet": "Meet",
-          "meet_text": "We started as an entry in Lithuania's #HackTheCrisis hackathon and are continuing from there. Watch out short pitch to learn more.",
-          "cta_title": "Sign up for early access",
-          "cta_text": "The app is currently in active development and is available for early adopters. Sign up for our mailing list and be the first to try it.",
-          "sign_up": "Sign up",
-          "footer_copyright": "&copy; 2020 pard"
+          intro_title: "Marketplace for the 21st century",
+          intro_text:
+            "We are the newest, friendliest and easiest to use local market app currently being developed. Sign up to receive early access.",
+          learn_more: "Learn more",
+          early_access: "Early access",
+          features_title: "Exciting features",
+          feature_1_title: "Starter kit for going online",
+          feature_1_text:
+            "It takes one minute to register for our app and start selling products. It's that easy.",
+          feature_2_title: "No paperwork",
+          feature_2_text:
+            "We handle all the legal stuff so you don't have to, including privacy policy and terms of use.",
+          feature_3_title: "Add listings and manage stock",
+          feature_3_text:
+            "Easily add listings in the app with your phone's camera — take a picture, add details and post.",
+          feature_4_title: "Attract new customers",
+          feature_4_text:
+            "Visitors can browse through all the listings and make orders directly in the marketplace.",
+          feature_5_title: "Payment integration",
+          feature_5_text:
+            "Visitors can purchase the items with highly secure in-app payments.",
+          feature_6_title: "Pickup & delivery",
+          feature_6_text:
+            "We will pick up and deliver the item from your store to the customer.",
+          meet: "Meet",
+          meet_text:
+            "We started as an entry in Lithuania's #HackTheCrisis hackathon and are continuing from there. Watch out short pitch to learn more.",
+          cta_title: "Sign up for early access",
+          cta_text:
+            "The app is currently in active development and is available for early adopters. Sign up for our mailing list and be the first to try it.",
+          sign_up: "Sign up",
+          footer_copyright: "&copy; 2020 pard"
         }
       }
     }
   },
-  function (err, t) {
+  function(err, t) {
     // initialized and ready to go!
-    updateContent(["intro_title",
+    updateContent([
+      "intro_title",
       "intro_text",
       "learn_more",
       "early_access",
@@ -150,7 +179,7 @@ i18next.init({
   }
 );
 
-(function () {
+(function() {
   const win = window;
   const doc = document.documentElement;
 
@@ -258,22 +287,22 @@ i18next.init({
       if (object[i].classList.contains("is-translating")) {
         tranformProperty.push(
           "translate(" +
-          coordinateX / translatingFactor +
-          "px, " +
-          coordinateY / translatingFactor +
-          "px)"
+            coordinateX / translatingFactor +
+            "px, " +
+            coordinateY / translatingFactor +
+            "px)"
         );
       }
 
       if (object[i].classList.contains("is-rotating")) {
         tranformProperty.push(
           "perspective(" +
-          perspective +
-          "px) rotateY(" +
-          -coordinateX / rotatingFactor +
-          "deg) rotateX(" +
-          coordinateY / rotatingFactor +
-          "deg)"
+            perspective +
+            "px) rotateY(" +
+            -coordinateX / rotatingFactor +
+            "deg) rotateX(" +
+            coordinateY / rotatingFactor +
+            "deg)"
         );
       }
 
@@ -295,7 +324,7 @@ i18next.init({
   if (movingObjects) {
     win.addEventListener(
       "mousemove",
-      throttle(function (e) {
+      throttle(function(e) {
         moveObjects(e, movingObjects);
       }, 150)
     );

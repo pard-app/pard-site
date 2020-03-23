@@ -51,6 +51,7 @@
   },
   "homepage": "https://bitbucket.org/pasqualevitiello/laurel#readme",
   "dependencies": {
-    "i18next": "^19.3.3"
+    "i18next": "^19.3.3",
+    "i18next-browser-languagedetector": "^4.0.2"
   }
 }
