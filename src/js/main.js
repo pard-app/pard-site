@@ -60,7 +60,7 @@ i18next.init({
           "meet": "Meet",
           "meet_text": "Learn more about our app in the video .... ",
           "cta_title": "Sign up for early access",
-          "cta_text": "Enter your e-mail to sign up for our mailing list and receive access to the app.",
+          "cta_text": "Sign up for our mailing list and receive access to the app.",
           "sign_up": "Sign up",
           "footer_copyright": "&copy; 2020 pard"
         }
