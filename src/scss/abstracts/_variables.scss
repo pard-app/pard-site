@@ -1,0 +1,97 @@
+$color1: hsla(42%, 100%, 50%, 1);
+$color2: hsla(158%, 68%, 31%, 1);
+$color3: hsla(358%, 71%, 44%, 1);
+$color4: hsla(226%, 71%, 42%, 1);
+$color5: hsla(289%, 65%, 41%, 1);
+
+/* RGB */
+$color1: rgba(253, 179, 0, 1);
+$color2: rgba(25, 131, 93, 1);
+$color3: rgba(192, 32, 37, 1);
+$color4: rgb(31, 67, 181);
+$color5: rgba(147, 37, 173, 1);
+
+// /* HSL */
+// $color1: hsla(42%, 98%, 59%, 1);
+// $color2: hsla(159%, 40%, 43%, 1);
+// $color3: hsla(358%, 56%, 54%, 1);
+// $color4: hsla(225%, 50%, 52%, 1);
+// $color5: hsla(289%, 45%, 52%, 1);
+
+// /* RGB */
+// $color1: rgba(253, 192, 46, 1);
+// $color2: rgba(66, 153, 122, 1);
+// $color3: rgba(203, 72, 76, 1);
+// $color4: rgba(71, 101, 194, 1);
+// $color5: rgba(166, 76, 187, 1);
+
+// --------------------------------------------
+// Colors -------------------------------------
+// Usage example: color(primary, main)
+// --------------------------------------------
+$color: (typography: (1: rgb(8, 8, 8),
+		2: rgb(74, 90, 114),
+		3: rgb(255, 255, 255)),
+	bg: (1: rgb(243, 243, 243),
+		2: #1D304B,
+		3: $color1),
+	primary: (1: $color5,
+		2: #FB7389,
+		3: #F71135),
+	secondary: (1: #47A1F9,
+		2: #78BAFB,
+		3: #1688F7));
+
+// --------------------------------------------
+// Typography ---------------------------------
+// --------------------------------------------
+
+$font__family: (base: '"Bellota Text", sans-serif;', // font-family(base)
+	heading: '"Comfortaa", sans-serif;', // font-family(heading)
+	code: 'Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace', // font-family(code)
+	pre: '"Courier 10 Pitch", Courier, monospace' // font-family(pre)
+);
+
+$font__sizes: (alpha: (48px, 62px, 0px), // font-size, line-height, kerning (use '0' if don't want to output any kerning)
+	beta: (44px, 56px, 0px),
+	gamma: (40px, 52px, 0px),
+	delta: (24px, 34px, -0.1px),
+	epsilon: (20px, 30px, -0.1px),
+	zeta: (18px, 27px, -0.1px),
+	eta: (16px, 24px, -0.1px),
+	theta: (14px, 20px, 0px));
+
+$font__scale: (desktop: ( // i.e. $breakpoint__m + $breakpoint__l (600 - 1024)
+		1: map-get($font__sizes, alpha), // H1
+		2: map-get($font__sizes, beta), // H2
+		3: map-get($font__sizes, delta), // H3
+		4: map-get($font__sizes, epsilon), // H4, H5, H6
+		5: map-get($font__sizes, epsilon), // Body
+		6: map-get($font__sizes, zeta), // Text small (e.g. faq's)
+		7: map-get($font__sizes, eta), // Text smaller (e.g. pricing, testimonials)
+		8: map-get($font__sizes, theta) // Footer area
+	),
+	mobile: ( // i.e. $breakpoint__xs + $breakpoint__s (up to 600)
+		1: map-get($font__sizes, beta), // H1
+		2: map-get($font__sizes, gamma), // H2
+		3: map-get($font__sizes, delta), // H3
+		4: map-get($font__sizes, epsilon), // H4, H5, H6
+		5: map-get($font__sizes, epsilon), // Body
+		6: map-get($font__sizes, zeta), // Text small (e.g. faq's)
+		7: map-get($font__sizes, eta), // Text smaller (e.g. pricing, testimonials)
+		8: map-get($font__sizes, theta) // Footer area
+	));
+
+$font__weight: (regular: 400, // font__weight(regular)
+	medium: 500, // font__weight(medium)
+	semibold: 600, // font__weight(semi-bold)
+	bold: 700 // font__weight(bold)
+);
+
+// --------------------------------------------
+// Structure ----------------------------------
+// --------------------------------------------
+$content__padding: (mobile: 16px,
+	desktop: 24px);
+$container__width: 1080px;
+$container__width-sm: 800px;
