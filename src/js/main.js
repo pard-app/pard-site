@@ -113,7 +113,7 @@ i18next.use(window.i18nextBrowserLanguageDetector).init(
       },
       lt: {
         translation: {
-          intro_title: "Prekyvietė karantino laikotarpiu",
+          intro_title: "Prekybvietė karantino laikotarpiu",
           intro_text:
             'Programavimo kūrybinių dirbtuvių (angl. hackathon) „Hack the crisis" dalyviai, tarptautinė komanda #pard.app jungiasi prie verslumo skatinimo agentūros  „Versli Lietuva" pagalbos verslui iniciatyvos  „Internete karantino nėra" ir pristato e. prekybos vietą internete. Ši platforma yra skirta greitai ir patogiai susikurti savo profilį ir pradėti prekybą internete! O pirkėjams - tai viena vieta, kurioje galima rasti įvairius smulkaus ir vidutinio dydžio verslo siūlomus produktus! Atliekami baigiamieji platformos paleidimo darbai, todėl prekiauti ir atrasti naujus prekeivius galėsite jau labai greitai!',
           learn_more: "Sužinoti daugiau",
