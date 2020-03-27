@@ -95,3 +95,12 @@
 		margin: 0 auto;
 	}
 }
+
+.badge {
+	color: color(typography, 3) !important;
+	background-color: color(secondary, 1) !important;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 12px;
+	text-transform: uppercase;
+}
