@@ -3,7 +3,7 @@
 	@include font-size(8, mobile, true, true, true);
 
 	@if (get-font-size(8, desktop) !=get-font-size(8, mobile)) {
-		@include media('>medium') {
+		@include media(">medium") {
 			@include font-size(8, desktop, true, true, true);
 		}
 	}
@@ -11,7 +11,7 @@
 	color: color(typography, 1);
 
 	&::before {
-		content: '';
+		content: "";
 		position: absolute;
 		bottom: 0;
 		left: calc(50% - 180px);
@@ -41,7 +41,6 @@
 .footer-copyright {
 	flex: none;
 	width: 100%;
-	display: inline-flex;
 	justify-content: center;
 }
 
@@ -53,17 +52,14 @@
 
 .footer-links,
 .footer-social-links {
-
 	li {
-
-		+li {
+		+ li {
 			margin-left: 16px;
 		}
 	}
 }
 
 .footer-social-links {
-
 	li {
 		display: inline-flex;
 
@@ -73,8 +69,7 @@
 	}
 }
 
-@include media('>medium') {
-
+@include media(">medium") {
 	.site-footer {
 		margin-top: 20px;
 	}
@@ -110,4 +105,21 @@
 
 .footer-brand {
 	flex-direction: column;
+}
+
+.footer-links li {
+	float: right;
+	margin: 10px 5px;
+
+	@media (max-width: 640px) {
+		float: none;
+		display: inline-block;
+	}
+}
+
+.footer-links img {
+	display: inline-block;
+	height: 40px;
+	width: auto;
+	min-width: 100%;
 }
