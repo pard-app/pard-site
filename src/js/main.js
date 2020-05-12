@@ -12,7 +12,7 @@ i18next.on("languageChanged", () => {
   updateContent([
     "intro_title",
     "intro_text",
-    "learn_more",
+    //"learn_more",
     "early_access",
     "features_title",
     "feature_1_title",
@@ -35,6 +35,7 @@ i18next.on("languageChanged", () => {
     "footer_copyright",
     "coming_soon",
     "coming_soon2",
+    "shop_now",
   ]);
 });
 
@@ -77,6 +78,7 @@ i18next.use(window.i18nextBrowserLanguageDetector).init(
           footer_copyright: "&copy; 2020 pard",
           coming_soon: "Coming soon",
           coming_soon2: "Coming soon",
+          shop_now: "Shop now",
         },
       },
       lv: {
@@ -85,7 +87,7 @@ i18next.use(window.i18nextBrowserLanguageDetector).init(
           intro_text:
             "Mēs esam jaunākā, draudzīgākā un visvieglāk lietojamā vietējā tirgus aplikācija, kas pašlaik tiek izstrādāta. Aplikācija pieejama agrīnajā piekļuvē.",
           learn_more: "Uzzināt vairāk",
-          early_access: "Agrīnā piekļuve",
+          early_access: "Reģistrēties",
           features_title: "Aizraujošas iespējas",
           feature_1_title: "Sākuma komplekts tiešsaistes biznesa uzsākšanai",
           feature_1_text:
@@ -115,6 +117,7 @@ i18next.use(window.i18nextBrowserLanguageDetector).init(
           footer_copyright: "&copy; 2020 pard",
           coming_soon: "Drīzumā",
           coming_soon2: "Drīzumā",
+          shop_now: "Iepirkties",
         },
       },
       lt: {
@@ -153,6 +156,7 @@ i18next.use(window.i18nextBrowserLanguageDetector).init(
           footer_copyright: "&copy; 2020 pard",
           coming_soon: "Jau greitai",
           coming_soon2: "Jau greitai",
+          shop_now: "Apsipirkti",
         },
       },
     },
@@ -162,7 +166,7 @@ i18next.use(window.i18nextBrowserLanguageDetector).init(
     updateContent([
       "intro_title",
       "intro_text",
-      "learn_more",
+      //"learn_more",
       "early_access",
       "features_title",
       "feature_1_title",
@@ -185,6 +189,7 @@ i18next.use(window.i18nextBrowserLanguageDetector).init(
       "footer_copyright",
       "coming_soon",
       "coming_soon2",
+      "shop_now",
     ]);
   }
 );
